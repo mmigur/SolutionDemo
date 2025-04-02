@@ -38,7 +38,7 @@ namespace user13.View
                 MinPriceTextBox.Text = _productsObject.min_price_partners.ToString();
                 WidthTextBox.Text = _productsObject.width_roll.ToString();
             }
-
+            //dwada
             TypeProductComboBox.ItemsSource = _context.product_type.Select(p => p.name).ToList();
         }
 
