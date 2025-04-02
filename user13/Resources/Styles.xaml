@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="MainBG" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="SecondaryBG" Color="#BBD9B2"/>
+    <SolidColorBrush x:Key="AccentBG" Color="#2D6033"/>
+
+    <Style x:Key="MainTextStyle" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="Candara"/>
+    </Style>
+
+    <BitmapImage x:Key="IconApp" UriSource="/Resources/icon.ico"/>
+    <BitmapImage x:Key="MainImage" UriSource="/Resources/mainPhoto.png"/>
+</ResourceDictionary>

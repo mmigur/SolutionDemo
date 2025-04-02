@@ -1,0 +1,50 @@
+﻿<Window x:Class="user13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:user13"
+        mc:Ignorable="d"
+        Title="Приложение" 
+        Height="450" 
+        Width="850"
+        Background="{StaticResource MainBG}"
+        Icon="{StaticResource IconApp}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="Продукты" Click="MenuItem_Click"/>
+        </Menu>
+
+        <Border 
+            Grid.Row="1" 
+            Background="{StaticResource SecondaryBG}"
+            Padding="10">
+            <StackPanel
+                Orientation="Horizontal">
+                <Image 
+                    Source="{StaticResource MainImage}"
+                    Width="100"
+                    Height="100"/>
+
+                <TextBlock 
+                    Text="Система управления партнерами"
+                    Style="{StaticResource MainTextStyle}"
+                    FontSize="20"
+                    Margin="150 0 0 0"
+                    VerticalAlignment="Center"
+                    FontWeight="Bold"/>
+            </StackPanel>
+        </Border>
+
+        <Frame
+            Grid.Row="2"
+            x:Name="MainFrame"
+            Navigated="Frame_Navigated"/>
+    </Grid>
+</Window>
